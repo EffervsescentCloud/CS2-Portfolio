@@ -1,0 +1,24 @@
+.background {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=316bee&c2=1eac77&gt=l&gd=dtl
+*/
+background: #316BEE;
+background: linear-gradient(135deg, #316BEE, #1EAC77);
+}
+header {
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+header h1 {
+    color:#ffffff;
+}
+
