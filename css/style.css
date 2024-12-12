@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin:0;
+}
 .background {
     position:fixed;
     top:0;
@@ -13,7 +21,7 @@ background: #316BEE;
 background: linear-gradient(135deg, #316BEE, #1EAC77);
 }
 header {
-    height:500px;
+    height:90vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -21,4 +29,78 @@ header {
 header h1 {
     color:#ffffff;
 }
-
+nav {
+    background-color:rgba(0,0,0,0.5);
+    position:sticky;
+    top:5px;
+    z-index:1;
+    margin:5px;
+    height:10vh;
+}
+nav ul {
+    display:flex;
+    list-style-type:none;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px 50px 10px 50px;
+}
+nav ul li a {
+    color:#ffffff;
+    font-size:1.2rem;
+    height:3rem;
+    display:flex;
+    align-items:center;
+}
+#aboutme {
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    background-color:rgba(0,0,0,0.5);
+    padding:20px;
+}
+.pane {
+    display:flex;
+    flex:0.5;
+    justify-content:center;
+}
+.pane img {
+    display:flex;
+    padding:auto;
+    flex:0.5;
+    width:0;
+}
+.text {
+    display:flex;
+    flex-direction:column;
+    flex:0.5;
+    color:#ffffff
+}
+.section-head {
+    color:#ffffff;
+    text-align:center;
+}
+#skills {
+    background-color:rgba(0,0,0,0.5);
+    padding:25px;
+}
+.skill-container {
+    display:flex;
+    justify-content:space-evenly;
+}
+.skill {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:200px;
+}
+.skill img {
+    width:100px;
+    display:flex;
+    padding:20px;
+}
+.skill h3 {
+    display:flex;
+    justify-content:center;
+    color:#ffffff;
+}
