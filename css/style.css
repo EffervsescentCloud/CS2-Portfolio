@@ -5,6 +5,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
     margin:0;
+    font-family:"Lato"
 }
 .background {
     position:fixed;
@@ -13,12 +14,58 @@ html {
     left:0;
     right:0;
     z-index: -1;
+    animation:colorchange 15s ease infinite;
     /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=316bee&c2=1eac77&gt=l&gd=dtl
 */
-background: #316BEE;
-background: linear-gradient(135deg, #316BEE, #1EAC77);
+background:linear-gradient(135deg,#316BEE,#1EAC77,#efd032,#fd2828,#8532EF,#316BEE, #1EAC77);
+
+}
+@keyframes colorchange {
+    0% {
+        top:00vh;
+        left:00vw;
+        bottom:-600vh;
+        right:-600vw;
+    }
+    17% {
+        top:-100vh;
+        left:-100vw;
+        bottom:-500vh;
+        right:-500vw;
+    }
+    33% {
+        top:-200vh;
+        left:-200vw;
+        bottom:-400vh;
+        right:-400vw;
+    }
+    50% {
+        top:-300vh;
+        left:-300vw;
+        bottom:-300vh;
+        right:-300vw;
+    }
+    67% {
+        top:-400vh;
+        left:-400vw;
+        bottom:-200vh;
+        right:-200vw;
+    }
+    83% {
+        top:-500vh;
+        left:-500vw;
+        bottom:-100vh;
+        right:-100vw;
+    }
+    100% {
+        top:-600vh;
+        left:-600vw;
+        bottom:-00vh;
+        right:-00vw;
+    }
+
 }
 header {
     height:90vh;
@@ -28,6 +75,7 @@ header {
 }
 header h1 {
     color:#ffffff;
+    font-size:35px;
 }
 nav {
     background-color:rgba(0,0,0,0.5);
@@ -56,7 +104,7 @@ nav ul li a {
     justify-content:center;
     margin:5px;
     background-color:rgba(0,0,0,0.5);
-    padding:20px;
+    padding:100px;
 }
 .pane {
     display:flex;
@@ -73,7 +121,9 @@ nav ul li a {
     display:flex;
     flex-direction:column;
     flex:0.5;
-    color:#ffffff
+    color:#ffffff;
+    font-size:18px;
+    line-height:29px;
 }
 .section-head {
     color:#ffffff;
@@ -81,7 +131,8 @@ nav ul li a {
 }
 #skills {
     background-color:rgba(0,0,0,0.5);
-    padding:25px;
+    padding:100px;
+    margin:5px;
 }
 .skill-container {
     display:flex;
@@ -103,4 +154,44 @@ nav ul li a {
     display:flex;
     justify-content:center;
     color:#ffffff;
+}
+#hobbies {
+    padding:80px;
+    color:#ffffff;
+    background-color:rgba(0,0,0,0.5);
+    margin:5px;
+}
+#hobbies ul {
+    list-style-type:none;
+    padding:10px;
+}
+#hobbies ul li {
+    display:flex;
+    justify-content:center;
+    margin:30px;
+}
+#contact {
+    color:#ffffff;
+    background-color:rgba(0,0,0,0.5);
+    margin:5px;
+    margin-bottom:10px;
+    padding:10px;
+    display:flex;
+    justify-content:space-around;
+}
+.contact-container {
+    min-width:200px;
+    display:flex;
+    align-items:center;
+}
+.contact-container ion-icon {
+    margin:10px 30px 10px 30px;
+}
+:link {
+    text-decoration:none;
+    transition:1s;
+}
+a:active {
+    transition:1s;
+    text-decoration:underline;
 }
