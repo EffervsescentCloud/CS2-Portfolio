@@ -187,11 +187,35 @@ nav ul li a {
 .contact-container ion-icon {
     margin:10px 30px 10px 30px;
 }
-:link {
+a:link {
     text-decoration:none;
     transition:1s;
 }
 a:active {
+    animation:colorful-links 5s ease infinite;
+}
+a:hover {
     transition:1s;
     text-decoration:underline;
+    color:#fd2828
+}
+@keyframes colorful-links {
+    0% {
+        color:#fd2828
+    }
+    20% {
+        color:#efd032
+    }
+    40% {
+        color:#1EAC77
+    }
+    60% {
+        color:#316BEE
+    }
+    80% {
+        color:#8532EF
+    }
+    100% {
+        color:#fd2828
+    }
 }
